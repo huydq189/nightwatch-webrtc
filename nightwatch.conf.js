@@ -81,6 +81,7 @@ module.exports = {
             //'--no-sandbox',
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
+            '--no-sandbox',
             '--headless',
             '--use-fake-ui-for-media-stream'
           ]
@@ -233,6 +234,7 @@ module.exports = {
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
             '--headless',
+            '--no-sandbox',
             '--use-fake-ui-for-media-stream'
           ]
         }
