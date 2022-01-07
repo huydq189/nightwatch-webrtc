@@ -1,7 +1,7 @@
 describe('GoMeet Demo', function() {
-  var serverURL = 'https://gomesainterb03.vnpt.vn/bigbluebutton/api/join?fullName=User+5157644&meetingID=random-9539007&password=mp&redirect=true&checksum=327363f092f4387b2e6a188501e5c27516fb60e0';
+  var serverURL = 'https://gomesainterb03.vnpt.vn/bigbluebutton/api/join?fullName=User+164546&meetingID=random-762815&password=mp&redirect=true&checksum=cde21b04de689213150fe50e9473e7569f213f84';
   var sec = 1000;
-  var waitingTimeToNext = 10 * sec;
+  var waitingTimeToNext = 2 * sec;
 
   before(browser => browser.url(serverURL));
 
@@ -16,7 +16,7 @@ describe('GoMeet Demo', function() {
       .pause(waitingTimeToNext)
       .waitForElementVisible('button[aria-label="Bắt đầu chia sẻ"]')
       .click('button[aria-label="Bắt đầu chia sẻ"]')
-      .pause(7 * 60 * sec);
+      .pause(10 * 60 * sec);
   });
 
   after(browser => browser.end());

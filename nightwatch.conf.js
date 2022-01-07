@@ -5,7 +5,7 @@ const Services = {}; loadServices();
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: [],
+  src_folders: ["tests"],
 
   // See https://nightwatchjs.org/guide/working-with-page-objects/
   page_objects_path: '',
@@ -19,15 +19,7 @@ module.exports = {
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
 
-  webdriver: {
-    start_process: true,
-    port: 9515,
-    server_path: 'node_modules/.bin/chromedriver',
-    cli_args: [
-      // --verbose
-      '--disable-web-security'
-    ]
-  },
+  webdriver: {},
 
   test_settings: {
     default: {
@@ -89,7 +81,7 @@ module.exports = {
             //'--no-sandbox',
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
-            //'--headless',
+            '--headless',
             '--use-fake-ui-for-media-stream'
           ]
         }
@@ -97,11 +89,10 @@ module.exports = {
 
       webdriver: {
         start_process: true,
-        port: 9515,
+        port: 4444,
         server_path: 'node_modules/.bin/chromedriver',
         cli_args: [
           // --verbose
-          '--disable-web-security'
         ]
       }
     },
@@ -235,8 +226,15 @@ module.exports = {
       extends: 'selenium_server',
       desiredCapabilities: {
         browserName: 'chrome',
-        chromeOptions : {
-          w3c: false
+        'goog:chromeOptions' : {
+          w3c: false,
+          args: [
+            //'--no-sandbox',
+            //'--ignore-certificate-errors',
+            //'--allow-insecure-localhost',
+            '--headless',
+            '--use-fake-ui-for-media-stream'
+          ]
         }
       }
     },
