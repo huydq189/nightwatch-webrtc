@@ -1,5 +1,5 @@
-# nightmareJS load test template for webRTC 
-> https://github.com/segmentio/nightmare
+# nightWatch load test template for webRTC 
+> https://nightwatchjs.org/
 
 - [Technologies Used](#technologies-used)
 - [Features](#features)
@@ -15,7 +15,7 @@
 
 
 ## Technologies Used
-- NightmareJS
+- nightWatch
 - v4l2loopback for linux
 
 
