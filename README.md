@@ -1,4 +1,4 @@
-# Template for load test for webRTC using nightmareJS
+# nightmareJS load test template for webRTC 
 > https://github.com/segmentio/nightmare
 
 - [Technologies Used](#technologies-used)
@@ -6,11 +6,11 @@
 - [Setup](#setup)
 - [Usage](#usage)
 
-## General Information
+<!-- ## General Information
 - Provide general information about your project here.
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
-- Why did you undertake it?
+- Why did you undertake it? -->
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
@@ -37,6 +37,7 @@ npm install
 
 ## Usage
 Edit the `"start"` script in package.json
+
 *Increase the number of browser by add more browser name behind the `-e` flag*
 
 Example:
